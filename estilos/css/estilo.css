@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--- css Cabecera --*/
+header {
+  background: rgba(14, 68, 212, 0.6);
+  max-height: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+header .logo {
+  float: left;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+header h1 {
+  color: white;
+  font-family: Impact;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 8px 5px 1px #000;
+}
+
+nav {
+  box-shadow: 0px 8px 11px 0px rgba(14, 14, 15, 0.62);
+  font-size: 20px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+/*--- Contenido--*/
+
+.container .zona {
+  height: 150px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.container .zona a {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #1c95e6),
+    color-stop(1, #408c99)
+  );
+  background: -moz-linear-gradient(top, #1c95e6 5%, #408c99 100%);
+  background: -webkit-linear-gradient(top, #1c95e6 5%, #408c99 100%);
+  background: -o-linear-gradient(top, #1c95e6 5%, #408c99 100%);
+  background: -ms-linear-gradient(top, #1c95e6 5%, #408c99 100%);
+  background: linear-gradient(to bottom, #1c95e6 5%, #408c99 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c95e6', endColorstr='#408c99',GradientType=0);
+  background-color: #1c95e6;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+.container .zona a:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #408c99),
+    color-stop(1, #1c95e6)
+  );
+  background: -moz-linear-gradient(top, #408c99 5%, #1c95e6 100%);
+  background: -webkit-linear-gradient(top, #408c99 5%, #1c95e6 100%);
+  background: -o-linear-gradient(top, #408c99 5%, #1c95e6 100%);
+  background: -ms-linear-gradient(top, #408c99 5%, #1c95e6 100%);
+  background: linear-gradient(to bottom, #408c99 5%, #1c95e6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#1c95e6',GradientType=0);
+  background-color: #408c99;
+}
+.container .zona a:active {
+  position: relative;
+  top: 1px;
+}
+
+.container .zona a img {
+  border-radius: 5px;
+}
+
+.container .zona .btn1 {
+  margin-left: 70px;
+}
+
+/*--- css Formularios --*/
+/* form {
+  position: relative;
+} */
+
+.editar {
+  border: 1px solid;
+  margin: auto;
+  padding: auto;
+  width: 50%;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+/* .editar legend {
+  margin-left: ;
+} */
+
+.campo {
+  width: 100%;
+}
+
+.campo .form-control {
+  box-sizing: border-box;
+  display: block;
+  width: 250px;
+}
+
+.editar .boton {
+  margin-left: 20%;
+}
+
+.editar button {
+  margin-left: 20%;
+  width: 40%;
+}
+
+.contenido {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contenido .asig {
+  text-shadow: 2px 2px 2px rgba(14, 68, 212, 0.6);
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.contenido .buscar {
+  float: right;
+}
+
+.contenido .buscar label {
+  width: auto;
+}
+
+form label {
+  width: 150px;
+  margin-top: 3px;
+  display: inline-block;
+  padding: 3px;
+}
+
+form input,
+select {
+  border: 1px solid;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px, 0 10px 15px #fcfcfc inset;
+  height: auto;
+  width: 100%;
+  padding: 5px 8px;
+  -moz-transition: padding 0.25s;
+  -webkit-transition: padding 0.25s;
+  -o-transition: padding 0.25s;
+  transition: padding 0.25s;
+}
+
+.form-incr {
+  margin: auto;
+  padding: auto;
+  width: 40%;
+}
+
+.form-incr label {
+  width: 100px;
+}
+
+.form-incr button {
+  margin-top: 20px;
+  margin-left: 10%;
+  width: 30%;
+}
+
+/*-- css botonera alumnos --*/
+.botonera {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -20px;
+}
+
+.botonera .not-active {
+  pointer-events: none;
+  cursor: default;
+}
+
+/*--- css tablas --*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #fff;
+}
+
+th {
+  background: rgba(14, 68, 212, 0.6);
+  color: white;
+  font-weight: bold;
+}
+td,
+th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/*--- Pie de Pagina ---*/
+footer {
+  background: rgba(14, 68, 212, 0.6);
+  box-shadow: 0px -8px 11px 0px rgba(14, 14, 15, 0.62);
+  max-height: 630px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+footer .pie {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer hr {
+  padding: 0px;
+  margin: 0px;
+}
+
+.pie p {
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 2px #000;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+.pie .autor {
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 2px #000;
+  padding-left: 25px;
+}
+
+.pie .dir {
+  color: #fff;
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 2px #000;
+  padding-left: 25px;
+}
+
+.pie .tel {
+  color: #fff;
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 2px #000;
+  padding-left: 25px;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
