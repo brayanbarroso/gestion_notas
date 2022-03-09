@@ -18,20 +18,25 @@
 	include("../header.php");
 	?>
 
-	<!-- Formulario de Busqueda -->
-	<div class="contenido">
-		<form action="Buscar.php" method="post" class="buscar">
-			<label for="busca">Buscar:</label>
-			<input type="text" id="busca" name="busca" placeholder="Identificación o Apellido">
-			<button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Consultar</button>
-		</form>
 
+	<div class="contenido">
 		<!-- Formulario Para Agregar Alumnos -->
 		<!-- Button trigger modal -->
 		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
 			<span class="glyphicon glyphicon-plus"></span> Nuevo Alumno
 		</button>
-	</div>
+		
+		<!-- Formulario de Busqueda -->
+			<form action="Buscar.php" method="post" class="form-inline">
+				<div class="form-group">
+
+					<label for="busca">Buscar:</label>
+					<input type="text" class="form-control" id="busca" name="busca" placeholder="Identificación o Apellido">
+				</div>
+				<button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Consultar</button>
+			</form>
+		</div>
+
 
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

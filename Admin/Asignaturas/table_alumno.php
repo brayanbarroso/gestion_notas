@@ -26,9 +26,6 @@
             FROM alumno,asignatura,nota
             WHERE asignatura.`Id`= nota.`Asignatura_Id` AND alumno.`Id`= nota.`Alumno_Id` AND asignatura.`Id` = ?";
 
-    // $result = mysql_query($sql) or die(mysql_error());
-    // $result1 = mysql_query($sql) or die(mysql_error());
-    // $fila = mysql_fetch_array($result1);
     $result = $pdo->prepare($sql);
     $result->execute(array($cod));
     $rows = $result->fetchAll();

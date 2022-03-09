@@ -57,10 +57,19 @@
 	<!-- Sesiones -->
 	<section>
 		<div class="container">
+			<div class="row">
+
+			</div>
 			<div class="zona">
-				<a href="Programas/Programas.php"><img src="../estilos/img/programa.png" alt=""> Programas</a>
-				<a href="Asignaturas/Asignatura.php"><img src="../estilos/img/asignatura.jpg" alt=""> Asignaturas</a>
-				<a href="Matricula/matricula.php"><img src="../estilos/img/notas.jpg" alt=""> Matricula</a>
+				<a href="Programas/Programas.php" class="btn btn-primary">
+					<img src="../estilos/img/programa.png" alt=""  width="30" height="30"> Programas
+				</a>
+				<a href="Asignaturas/Asignatura.php" class="btn btn-primary">
+					<img src="../estilos/img/asignatura.jpg" alt=""  width="50" height="50"> Asignaturas
+				</a>
+				<a href="Matricula/matricula.php" class="btn btn-primary">
+					<img src="../estilos/img/notas.jpg" alt="" width="50" height="50"> Matricula
+				</a>
 			</div>
 			<div class="zona">
 				<a class="btn1" href="Profesor/Profesor.php"><img src="../estilos/img/profesores.jpg" alt=""> Docentes</a>

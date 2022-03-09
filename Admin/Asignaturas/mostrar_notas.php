@@ -29,38 +29,61 @@
 	$fila = $result1->fetch();
 	?>
 
-	<form action="../Notas/update_nota.php?cod=<?php echo $fila['Asignatura_Id']; ?>&id=<?php echo $fila['Alumno_Id']; ?>" method="post" class="editar_admin">
-		<fieldset>
-			<legend>Formulario de Calificaciones</legend>
-			<div class="">
-				<label for="cod">Codigo:</label>
-				<input type="text" id="cod" name="cod" value="<?php echo $fila['Codigo']; ?>">
-			</div>
-			<div class="">
-				<label for="asignatura">Asignatura:</label>
-				<input type="text" id="asignatura" name="asignatura" value="<?php echo $fila['Asignatura']; ?>">
-			</div>
-			<div class="">
-				<label for="cc">Identificación:</label>
-				<input type="text" id="cc" name="cc" value="<?php echo $fila['Doc']; ?>">
-			</div>
-			<div class="">
-				<label for="alumno">Alumno:</label>
-				<input type="text" id="alumno" name="alumno" value="<?php echo $fila['Nombre']; ?>">
-			</div>
-			<div class="">
-				<label for="nota1">Nota 1:</label>
-				<input type="text" id="nota1" name="nota1" placeholder="Example: 4.5" value="<?php echo $fila['Nota_1']; ?>">
-			</div>
-			<div class="">
-				<label for="nota2">Nota 2:</label>
-				<input type="text" id="nota2" name="nota2" placeholder="Example: 4.5" value="<?php echo $fila['Nota_2']; ?>">
-			</div>
-			<div class="">
-				<label for="nota3">Nota 3:</label>
-				<input type="text" id="nota3" name="nota3" placeholder="Example: 4.5" value="<?php echo $fila['Nota_3']; ?>">
-			</div>
-		</fieldset>
+	<form action="../Notas/update_nota.php?cod=<?php echo $fila['Asignatura_Id']; ?>&id=<?php echo $fila['Alumno_Id']; ?>" method="post" class="form-inline form-incr">
+	<div class="container">
+		<div class="row">
+			
+			<fieldset>
+					<legend>Formulario de Calificaciones</legend>
+					<div class="col-xs-12 col-md-6">
+						<div class="campo">
+							<label for="cod">Codigo:</label>
+							<input type="text" class="form-control" name="cod" value="<?php echo $fila['Codigo']; ?>">
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<div class="campo">
+							<label for="asignatura">Asignatura:</label>
+							<input type="text" class="form-control" id="asignatura" name="asignatura" value="<?php echo $fila['Asignatura']; ?>">
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						
+						<div class="campo">
+							<label for="cc">Identificación:</label>
+							<input type="text" class="form-control" id="cc" name="cc" value="<?php echo $fila['Doc']; ?>">
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						
+						<div class="campo">
+							<label for="alumno">Alumno:</label>
+							<input type="text" class="form-control" id="alumno" name="alumno" value="<?php echo $fila['Nombre']; ?>">
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12">
+						
+						<div class="campo">
+							<label for="nota1">Nota 1:</label>
+							<input type="text" class="form-control" id="nota1" name="nota1" placeholder="Example: 4.5" value="<?php echo $fila['Nota_1']; ?>">
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-12">
+<div class="campo">
+						<label for="nota2">Nota 2:</label>
+						<input type="text" class="form-control" id="nota2" name="nota2" placeholder="Example: 4.5" value="<?php echo $fila['Nota_2']; ?>">
+					</div>
+					</div>
+					<div class="col-xs-12 col-md-12">
+
+						<div class="campo">
+							<label for="nota3">Nota 3:</label>
+							<input type="text" class="form-control" id="nota3" name="nota3" placeholder="Example: 4.5" value="<?php echo $fila['Nota_3']; ?>">
+						</div>
+					</div>
+				</fieldset>
+		</div>
+	</div>	
 		<div class="boton">
 			<button class="btn btn-success"><span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span> Guardar</button>
 		</div>
