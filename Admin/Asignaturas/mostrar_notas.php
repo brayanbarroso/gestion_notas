@@ -29,8 +29,8 @@
 	$fila = $result1->fetch();
 	?>
 
-	<form action="../Notas/update_nota.php?cod=<?php echo $fila['Asignatura_Id']; ?>&id=<?php echo $fila['Alumno_Id']; ?>" method="post" class="form-inline form-incr">
-	<div class="container">
+	<form action="../Notas/update_nota.php?cod=<?php echo $fila['Asignatura_Id']; ?>&id=<?php echo $fila['Alumno_Id']; ?>" method="post" class="form-update">
+
 		<div class="row">
 			
 			<fieldset>
@@ -83,9 +83,9 @@
 					</div>
 				</fieldset>
 		</div>
-	</div>	
+		
 		<div class="boton">
-			<button class="btn btn-success"><span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span> Guardar</button>
+			<button class="btn btn-success mt-2 mb-2"><span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span> Guardar</button>
 		</div>
 	</form>
 

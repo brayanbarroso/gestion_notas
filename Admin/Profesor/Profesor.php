@@ -18,17 +18,19 @@
 	<!-- Formulario Para Agregar Alumnos -->
 
 	<div class="contenido">
-		<form action="Buscar.php" method="post" class="buscar">
-			<label for="busca">Buscar:</label>
-			<input type="text" id="busca" name="busca" placeholder="Identificación o Apellido">
-			<button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Consultar</button>
-		</form>
-
 		<!-- Button trigger modal -->
 		<!-- Formulario de Busqueda -->
 		<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#myModal">
 			<span class="glyphicon glyphicon-plus"></span> Nuevo Docentes
 		</button>
+
+		<form action="Buscar.php" method="post" class="form-inline">
+			<div class="form-group">
+				<label for="busca">Buscar:</label>
+				<input type="text" id="busca" class="form-control" name="busca" placeholder="Identificación o Apellido">
+			</div>
+			<button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Consultar</button>
+		</form>
 	</div>
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -39,7 +41,7 @@
 					<h4 class="modal-title" id="myModalLabel">Ingreso De Docentes</h4>
 				</div>
 				<div class="modal-body">
-					<form action="insert-profesor.php" method="post" class="form-inline">
+					<form action="insert-profesor.php" method="post" class="">
 						<fieldset>
 							<legend>Datos Basicos del Docente</legend>
 							<div class="row">

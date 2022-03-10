@@ -22,7 +22,7 @@
 	$fila = $result->fetch();
 	?>
 
-	<form action="edit-profesor.php?cc=<?php echo $fila['Id']; ?>" method="post" class="editar form-inline">
+	<form action="edit-profesor.php?cc=<?php echo $fila['Id']; ?>" method="post" class="form-update">
 		<fieldset>
 			<legend>Actualizar Datos Basicos del Docente</legend>
 
@@ -30,7 +30,7 @@
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="tipo">Tipo Documento</label>
-						<select name="tipo" id="tdoc">
+						<select name="tipo" id="tdoc" class="form-control">
 							<option value="">Seleccionar...</option>
 							<option value="RC">Registro Civil</option>
 							<option value="TI">Tarjeta Identidad</option>
@@ -42,60 +42,62 @@
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="nid">Identificación:</label>
-						<input type="text" id="nid" name="nid" value="<?php echo $fila['Doc']; ?>" disabled>
+						<input type="text" class="form-control" id="nid" name="nid" value="<?php echo $fila['Doc']; ?>" disabled>
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="nombre">Nombres:</label>
-						<input type="text" id="nombre" name="pnombre" placeholder="Nombres" value="<?php echo $fila['Nombres']; ?>">
+						<input type="text" class="form-control" id="nombre" name="pnombre" placeholder="Nombres" value="<?php echo $fila['Nombres']; ?>">
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="Snombre">Segundo Nombres:</label>
-						<input type="text" id="Snombre" name="Snombre" placeholder="Segundo Nombres" value="<?php echo $fila['Snom']; ?>">
+						<input type="text" class="form-control" id="Snombre" name="Snombre" placeholder="Segundo Nombres" value="<?php echo $fila['Snom']; ?>">
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="pape">Primer Apellido:</label>
-						<input type="text" id="pape" name="pape" placeholder="Apellidos" value="<?php echo $fila['pApellido']; ?>">
+						<input type="text" class="form-control" id="pape" name="pape" placeholder="Apellidos" value="<?php echo $fila['pApellido']; ?>">
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="sape">Segundo Apellido:</label>
-						<input type="text" id="sape" name="sape" placeholder="Apellidos" value="<?php echo $fila['sApellido']; ?>">
+						<input type="text" class="form-control" id="sape" name="sape" placeholder="Apellidos" value="<?php echo $fila['sApellido']; ?>">
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="tel">Teléfono</label>
-						<input type="text" id="tel" name="tel" placeholder="777777777" value="<?php echo $fila['Telefono']; ?>">
+						<input type="text" class="form-control" id="tel" name="tel" placeholder="777777777" value="<?php echo $fila['Telefono']; ?>">
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="dir">Dirección:</label>
-						<input type="text" id="dir" name="dir" placeholder="Direccion" value="<?php echo $fila['Direccion']; ?>">
+						<input type="text" class="form-control" id="dir" name="dir" placeholder="Direccion" value="<?php echo $fila['Direccion']; ?>">
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="email">Correo Electronico:</label>
-						<input type="text" id="email" name="email" placeholder="example@example.com" value="<?php echo $fila['Correo']; ?>">
+						<input type="text" class="form-control" id="email" name="email" placeholder="example@example.com" value="<?php echo $fila['Correo']; ?>">
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="campo">
 						<label for="asign">Usuario:</label>
-						<input type="text" id="user" name="user" placeholder="usuario" value="<?php echo $fila['Usuario']; ?>">
+						<input type="text" class="form-control" id="user" name="user" placeholder="usuario" value="<?php echo $fila['Usuario']; ?>">
 					</div>
 				</div>
 			</div>
 
-			<button class="btn btn-warning mb-2 mt-2"><span class="glyphicon glyphicon-refresh"></span> Actualizar</button>
+			<button class="btn btn-warning mb-2 mt-2">
+				<span class="glyphicon glyphicon-refresh"></span> Actualizar
+			</button>
 			</div>
 		</fieldset>
 	</form>

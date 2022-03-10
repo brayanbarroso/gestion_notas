@@ -6,11 +6,12 @@ $cod = $_REQUEST['cod'];
 
 $id = $_POST['nit'];
 $nom = $_POST['nombre'];
+$cre = $_POST['duracion'];
 
 if (!empty($id)) {
-  $sql = "UPDATE Curso SET Codigo = '$id', Nombre = '$nom' WHERE Codigo = '$cod'";
+  $sql = "UPDATE Curso SET Codigo = ?, Curso = ?, Duracion = ? WHERE id = ?";
   $update = $pdo->prepare($sql);
-  $update->execute(array($id, $nom, $cod));
+  $update->execute(array($id, $nom, $cre, $cod));
   $pdo = null;
 
   header("Location:Programas.php");

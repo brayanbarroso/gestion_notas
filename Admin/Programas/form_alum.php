@@ -30,18 +30,18 @@
 	$rows = $sql->fetchAll();
 	?>
 
-	<form action="add_alum.php" role="form" class="form-incr form-horizontal" method="POST">
-
+	<form action="add_alum.php" role="form" class="form-data" method="POST">
+<legend>Matricular Alumno</legend>
 		<div class="campo">
-			<input type="hidden" id="codig" name="codigo" value="<?php echo $fila['id']; ?>" readonly />
+			<input type="hidden" class="form-control" id="codig" name="codigo" value="<?php echo $fila['id']; ?>" readonly />
 		</div>
 		<div class="form-group">
 			<label for="">Programa:</label>
-			<input type="text" id="" name="" value="<?php echo $fila['Curso']; ?>" readonly>
+			<input type="text" class="form-control" id="" name="" value="<?php echo $fila['Curso']; ?>" readonly>
 		</div>
 		<div class="form-group">
 			<label for="id">Alumno:</label>
-			<select name="alumno" id="">
+			<select name="alumno" id="" class="form-control">
 				<option value="">Selecionar Alumno</option>
 				<?php
 				foreach ($rows as $row) :
@@ -63,7 +63,7 @@
 		</div>
 		<div class="form-group">
 			<label for="fecha">Fecha Matricula:</label>
-			<input type="date" id="nombre" name="fecha" placeholder="aaaa-mm-dd">
+			<input type="date" class="form-control" id="nombre" name="fecha" placeholder="aaaa-mm-dd">
 		</div>
 
 		<div class="boton">

@@ -37,15 +37,15 @@
                                 <legend>Registro de Asignaturas</legend>
                                 <div class="campo">
                                     <label for="cod">Codigo:</label>
-                                    <input type="text" id="cod" name="cod">
+                                    <input type="text" class="form-control" id="cod" name="cod">
                                 </div>
                                 <div class="campo">
                                     <label for="nombre">Nombres:</label>
-                                    <input type="text" id="nombre" name="nombre">
+                                    <input type="text" class="form-control" id="nombre" name="nombre">
                                 </div>
                                 <div class="campo">
                                     <label for="credito">Creditos:</label>
-                                    <select name="credito" id="">
+                                    <select name="credito" class="form-control" id="">
                                         <option value="">Numero de Creditos</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>

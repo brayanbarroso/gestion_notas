@@ -26,20 +26,20 @@
 	$pdo = null;
 	?>
 
-	<form action="edit-asignatura.php?cod=<?php echo $fila['Id']; ?>" method="post" class="form-incr">
+	<form action="edit-asignatura.php?cod=<?php echo $fila['Id']; ?>" method="post" class="form-data">
 		<fieldset>
 			<legend>Modificar Asignatura</legend>
 			<div class="campo">
 				<label for="nit">Codigo:</label>
-				<input type="text" id="nit" name="nit" value="<?php echo $fila['Codigo']; ?>">
+				<input type="text" class="form-control" id="nit" name="nit" value="<?php echo $fila['Codigo']; ?>">
 			</div>
 			<div class="campo">
 				<label for="nombre">Nombres:</label>
-				<input type="text" id="nombre" name="nombre" value="<?php echo $fila['Asignatura']; ?>">
+				<input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $fila['Asignatura']; ?>">
 			</div>
 			<div class="campo">
-				<label for="nombre">Nombres:</label>
-				<input type="text" id="ct" name="credito" value="<?php echo $fila['Credito']; ?>">
+				<label for="nombre">Creditos:</label>
+				<input type="text" class="form-control" id="ct" name="credito" value="<?php echo $fila['Credito']; ?>">
 			</div>
 
 			<div class="boton">

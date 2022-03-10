@@ -27,21 +27,21 @@
 	$rows = $sql->fetchAll();
 	?>
 
-	<form action="insert-inscripcion.php" method="post" enctype="multi" class="form-incr">
+	<form action="insert-inscripcion.php" method="post" enctype="multi" class="form-data">
 		<fieldset>
 			<legend>Matricular Alumno - Asignatura</legend>
 			<div class="campo">
 				<label for="nit">Codigo:</label>
-				<input type="text" id="nit" name="nit" value="<?php echo $fila['Id']; ?>">
+				<input type="text" class="form-control" id="nit" name="nit" value="<?php echo $fila['Id']; ?>">
 			</div>
 			<div class="campo">
 				<label for="nombre">Nombres:</label>
-				<input type="text" id="nombre" name="nombre" value="<?php echo $fila['Asignatura']; ?>">
+				<input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $fila['Asignatura']; ?>">
 			</div>
 			<div class="form-group">
 				<div class="campo">
 			<label for="id">Alumno:</label>
-			<select name="alumno" id="">
+			<select name="alumno" class="form-control" id="">
 				<option value="">Selecionar Alumno</option>
 				<?php
 				foreach ($rows as $row) :

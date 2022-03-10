@@ -50,6 +50,7 @@ nav ul li {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 /*--- Contenido--*/
 .contenido {
@@ -59,4 +60,34 @@ img {
   justify-content: space-between;
   margin-bottom: 20px;
   padding: 0 16px 0 16px;
+}
+/* formulario de actualizacion Alumno Docente */
+.form-update {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+.form-update legend {
+  text-align: center;
+}
+
+.form-update .btn-update {
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+/* formuario de datos programa */
+.form-data {
+  border: 1 solid red;
+  margin: 0 auto;
+  max-width: 365px;
 }

@@ -58,24 +58,27 @@
 	<section>
 		<div class="container">
 			<div class="row">
-
+				<div class="col-xs-12 col-md-6">
+					<a href="Programas/Programas.php" class="btn btn-primary">
+						<img src="../estilos/img/programa.png" class="img-rounded" alt=""  width="40" height="40"> Programas
+					</a>
+					<a href="Asignaturas/Asignatura.php" class="btn btn-primary">
+						<img src="../estilos/img/asignatura.jpg" class="img-rounded" alt=""  width="40" height="40"> Asignaturas
+					</a>
+					<a href="Matricula/matricula.php" class="btn btn-primary">
+						<img src="../estilos/img/notas.jpg" class="img-rounded" alt="" width="40" height="40"> Matricula
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<a class="btn btn-primary" href="Profesor/Profesor.php">
+						<img src="../estilos/img/profesores.jpg" class="img-rounded" alt="" width="40" height="40"> Docentes
+					</a>
+					<a class="btn btn-primary" href="Alumno/Alumno.php">
+						<img src="../estilos/img/estudiantes.png" class="img-rounded" alt="" width="40" height="40"> Estudiantes
+					</a>
+				</div>
 			</div>
-			<div class="zona">
-				<a href="Programas/Programas.php" class="btn btn-primary">
-					<img src="../estilos/img/programa.png" alt=""  width="30" height="30"> Programas
-				</a>
-				<a href="Asignaturas/Asignatura.php" class="btn btn-primary">
-					<img src="../estilos/img/asignatura.jpg" alt=""  width="50" height="50"> Asignaturas
-				</a>
-				<a href="Matricula/matricula.php" class="btn btn-primary">
-					<img src="../estilos/img/notas.jpg" alt="" width="50" height="50"> Matricula
-				</a>
 			</div>
-			<div class="zona">
-				<a class="btn1" href="Profesor/Profesor.php"><img src="../estilos/img/profesores.jpg" alt=""> Docentes</a>
-				<a class="btn1" href="Alumno/Alumno.php"><img src="../estilos/img/estudiantes.png" alt=""> Estudiantes</a>
-			</div>
-		</div>
 	</section>
 
 	<footer>

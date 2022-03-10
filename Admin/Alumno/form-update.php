@@ -24,7 +24,7 @@
 	$fila = $sql1->fetch();
 	?>
 
-	<form action="edit-alumno.php?cc=<?php echo $fila['Id']; ?>" method="post" class="form-inline editar">
+	<form action="edit-alumno.php?cc=<?php echo $fila['Id']; ?>" method="post" class="form-update">
 		<fieldset>
 			<legend>Actualizar Datos Basicos del Alumno</legend>
 		</fieldset>
@@ -98,8 +98,8 @@
 
 		</div>
 
-		<div class=" boton">
-			<button class="btn btn-warning mb-2 mt-2"><span class="glyphicon glyphicon-refresh"></span> Actualizar</button>
+		<div class="btn-update">
+			<button class="btn btn-warning btn-lg btn-block mb-2 mt-2"><span class="glyphicon glyphicon-refresh"></span> Actualizar</button>
 		</div>
 
 	</form>

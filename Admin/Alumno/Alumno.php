@@ -47,7 +47,7 @@
 					<h4 class="modal-title" id="myModalLabel">Ingreso De Alumnos</h4>
 				</div>
 				<div class="modal-body">
-					<form action="insert-alumno.php" class="form-inline" method="post">
+					<form action="insert-alumno.php" class="" method="post">
 						<div class="row">
 							<div class="col-xs-12 col-md-6">
 								<div class="campo">

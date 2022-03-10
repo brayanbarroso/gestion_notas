@@ -22,20 +22,24 @@
 	$fila = $sql1->fetch();
 	?>
 
-	<form action="edit-programa.php?cod=<?php echo $fila['Codigo']; ?>" method="post" class="form-incr">
+	<form action="edit-programa.php?cod=<?php echo $fila['id']; ?>" method="post" class="form-data">
 		<fieldset>
-			<legend>Datos Basicos del Docente</legend>
+			<legend>Editar Curso</legend>
 			<div class="campo">
 				<label for="nit">Codigo:</label>
-				<input type="text" id="nit" name="nit" value="<?php echo $fila['Codigo']; ?>">
+				<input type="text" class="form-control" id="nit" name="nit" value="<?php echo $fila['Codigo']; ?>">
 			</div>
 			<div class="campo">
 				<label for="nombre">Nombres:</label>
-				<input type="text" id="nombre" name="nombre" value="<?php echo $fila['Nombre']; ?>">
+				<input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $fila['Curso']; ?>">
+			</div>
+			<div class="campo">
+				<label for="nombre">Duracion:</label>
+				<input type="text" class="form-control" id="n" name="duracion" value="<?php echo $fila['Duracion']; ?>">
 			</div>
 
 			<div class="boton">
-				<button class="btn btn-warning"><i class="glyphicon glyphicon-refresh"></i> Actualizar</button>
+				<button class="btn btn-warning mt-2 mb-2"><i class="glyphicon glyphicon-refresh"></i> Actualizar</button>
 			</div>
 		</fieldset>
 	</form>

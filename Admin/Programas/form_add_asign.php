@@ -27,19 +27,19 @@
 	$rows = $sql->fetchAll();
 	?>
 
-	<form action="add_asign.php" method="post" class="form-incr" enctype="multipart/form-data">
+	<form action="add_asign.php" method="post" class="form-data" enctype="multipart/form-data">
 		<fieldset>
 			<legend>Agregar Asignatura al Pensum</legend>
 			<div class="campo">
-				<input type="hidden" id="codigo" name="codigo" value="<?php echo $fila['id']; ?>" readonly />
+				<input type="hidden" class="form-control" id="codigo" name="codigo" value="<?php echo $fila['id']; ?>" readonly />
 			</div>
 			<div class="campo">
 				<label for="pnombre">Programa:</label>
-				<input type="text" id="pnombre" name="pnombre" value="<?php echo $fila['Curso']; ?>" readonly />
+				<input type="text" class="form-control" id="pnombre" name="pnombre" value="<?php echo $fila['Curso']; ?>" readonly />
 			</div>
 			<div class="campo">
 				<label for="asign">Asignatura:</label>
-				<select name="asign" id="">
+				<select name="asign" id="" class="form-control">
 					<option value="">Selecionar</option>
 					<?php
 					foreach ($rows as $row) :
@@ -53,7 +53,7 @@
 			</div>
 			<div class="campo">
 				<label for="semestre">Semestre:</label>
-				<select name="semestre" id="semestre">
+				<select name="semestre" class="form-control" id="semestre">
 					<option value="">Selecionar...</option>
 					<option value="1">1</option>
 					<option value="2">2</option>

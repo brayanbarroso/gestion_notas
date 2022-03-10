@@ -36,15 +36,15 @@
                 <legend>Programa</legend>
                 <div class="campo">
                   <label for="cod">Codigo:</label>
-                  <input type="text" id="cod" name="cod">
+                  <input type="text" class="form-control" id="cod" name="cod">
                 </div>
                 <div class="campo">
                   <label for="nombre">Nombres:</label>
-                  <input type="text" id="nombre" name="nombre">
+                  <input type="text" class="form-control" id="nombre" name="nombre">
                 </div>
                 <div class="campo">
                   <label for="duracion">Duración:</label>
-                  <input type="text" id="duracion" name="duracion">
+                  <input type="text" class="form-control" id="duracion" name="duracion">
                 </div>
               </fieldset>
 
