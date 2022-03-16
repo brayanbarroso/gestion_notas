@@ -75,39 +75,58 @@
 
 	?>
 
-	<form action="edit-admin.php?cc=<?php echo $fila['Id']; ?>" method="post" class="editar_admin">
+	<form action="edit-admin.php?cc=<?php echo $fila['Id']; ?>" method="post" class="form-update">
 		<fieldset>
 			<legend>Actualizar Datos Basicos del Administrador</legend>
-			<div class="campo">
+			<div class="row">
+				<div class="campo">
 				<label for="nid">Numero de Identificación:</label>
-				<input type="text" id="nid" name="nid" value="<?php echo $fila['Id']; ?>" disabled>
+				<input type="text" class="form-control" id="nid" name="nid" value="<?php echo $fila['Id']; ?>" disabled>
 			</div>
 			<div class="campo">
 				<label for="nombre">Nombres:</label>
-				<input type="text" id="nombre" name="nombre" value="<?php echo $fila['Nombres']; ?>">
+				<input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $fila['Nombres']; ?>">
 			</div>
-			<div class="campo">
+			<div class="col-xs-12 col-md-6">
+<div class="campo">
 				<label for="pape">Primer Apellido:</label>
-				<input type="text" id="pape" name="pape" value="<?php echo $fila['pApellido']; ?>">
+				<input type="text" class="form-control" id="pape" name="pape" value="<?php echo $fila['pApellido']; ?>">
 			</div>
-			<div class="campo">
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="campo">
 				<label for="sape">Segundo Apellido:</label>
-				<input type="text" id="sape" name="sape" value="<?php echo $fila['sApellido']; ?>">
+				<input type="text" class="form-control" id="sape" name="sape" value="<?php echo $fila['sApellido']; ?>">
 			</div>
-			<div class="campo">
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="campo">
 				<label for="dir">Dirección:</label>
-				<input type="text" id="dir" name="dir" value="<?php echo $fila['Direccion']; ?>">
+				<input type="text" class="form-control" id="dir" name="dir" value="<?php echo $fila['Direccion']; ?>">
 			</div>
-			<div class="campo">
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="campo">
 				<label for="tel">Teléfono</label>
-				<input type="text" id="tel" name="tel" value="<?php echo $fila['Telefono']; ?>">
+				<input type="text" class="form-control" id="tel" name="tel" value="<?php echo $fila['Telefono']; ?>">
 			</div>
-			<div class="campo">
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="campo">
 				<label for="email">Correo Electronico:</label>
-				<input type="text" id="email" name="email" value="<?php echo $fila['Correo']; ?>">
+				<input type="email" class="form-control" id="email" name="email" value="<?php echo $fila['Correo']; ?>">
 			</div>
-			<div class="boton">
-				<button class="btn btn-warning"><span class="glyphicon glyphicon-refresh"></span> Actualizar</button>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="campo">
+				<label for="email">Usuario:</label>
+				<input type="text" class="form-control" id="user" name="user" value="<?php echo $fila['User_Admin']; ?>">
+			</div>
+			</div>
+
+			</div>
+			<div class="btn-update">
+				<button class="btn btn-warning btn-lg btn-block mb-2 mt-2"><span class="glyphicon glyphicon-refresh"></span> Actualizar</button>
 			</div>
 		</fieldset>
 	</form>

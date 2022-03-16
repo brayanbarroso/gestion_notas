@@ -52,6 +52,23 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Menu principal */
+.col-menu {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+.menu-main {
+  /* border: 1px solid red; */
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 /*--- Contenido--*/
 .contenido {
   /* border: 1px solid red; */
@@ -90,4 +107,25 @@ img {
   border: 1 solid red;
   margin: 0 auto;
   max-width: 365px;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  margin-top: 40px;
+}
+
+.pie {
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.pie p {
+  margin-left: 20px;
+}
+
+.pie span {
+  margin-left: 20px;
 }

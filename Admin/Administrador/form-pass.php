@@ -40,7 +40,7 @@
 	        	<li class="dropdown">
 		          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bienvenido <strong><?php echo $_SESSION['user_nombre']; ?></strong><span class="caret"></span></a>
 		          	<ul class="dropdown-menu">
-			            <li><a href="form-update.php?cc=<?php echo $_SESSION['user']; ?>"><i class="glyphicon glyphicon-refresh"></i> Actualizar Datos</a></li>
+			            <li><a href="form-update.php?cc=<?php echo $_SESSION['user_id']; ?>"><i class="glyphicon glyphicon-refresh"></i> Actualizar Datos</a></li>
 			            <li><a href="form-pass.php"><i class=" glyphicon glyphicon-cog"></i> Cambiar Contraseña</a></li>
 			             <li role="separator" class="divider"></li>
 			            <li><a href="../../Login/salir.php"><i class="glyphicon glyphicon-off"></i> Cerrar Sesion</a></li>

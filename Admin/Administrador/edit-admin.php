@@ -20,14 +20,15 @@
 
       if (!empty($nom)) {
              $sql = "UPDATE Administrador SET 
-                                       Nombres = '$nom',
-                                       pApellido = '$pape',
-                                       sApellido = '$sape',
-                                       Direccion = '$dir',
-                                       Telefono = '$tel',
-                                       Correo = '$email'
-                     WHERE Id = '$cc'";
-            mysql_query($sql);
+                                       Nombres = ?,
+                                       pApellido = ?,
+                                       sApellido = ?,
+                                       Direccion = ?,
+                                       Telefono = ?,
+                                       Correo = ?
+                     WHERE Id = ?";
+            $update = $pdo->prepare($sql);
+            $update->execute(array($nom,$pape,$sape,$dir,$tel,$email,$cc));
 
             header("Location:../");
       }else{

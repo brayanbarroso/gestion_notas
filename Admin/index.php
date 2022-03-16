@@ -38,7 +38,7 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bienvenido <strong style="color: #fff"><?php echo $_SESSION['user_nombre']; ?></strong><span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li>
-							<a href="Administrador/form-update.php?cc=<?php echo $_SESSION['id_user']; ?>">
+							<a href="Administrador/form-update.php?cc=<?php echo $_SESSION['user_id']; ?>">
 								<i class="glyphicon glyphicon-refresh"></i> Actualizar Datos
 							</a>
 						</li>
@@ -58,24 +58,37 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-6">
-					<a href="Programas/Programas.php" class="btn btn-primary">
+				<div class="col-xs-12 col-md-12 col-menu" >
+					<div class="menu-main">
+						<a href="Programas/Programas.php" class="btn btn-primary">
 						<img src="../estilos/img/programa.png" class="img-rounded" alt=""  width="40" height="40"> Programas
 					</a>
-					<a href="Asignaturas/Asignatura.php" class="btn btn-primary">
+					</div>
+					<div class="menu-main">
+						<a href="Asignaturas/Asignatura.php" class="btn btn-primary">
 						<img src="../estilos/img/asignatura.jpg" class="img-rounded" alt=""  width="40" height="40"> Asignaturas
 					</a>
-					<a href="Matricula/matricula.php" class="btn btn-primary">
+					</div>
+					<div class="menu-main">
+						<a href="Matricula/matricula.php" class="btn btn-primary">
 						<img src="../estilos/img/notas.jpg" class="img-rounded" alt="" width="40" height="40"> Matricula
 					</a>
+					</div>
+
 				</div>
-				<div class="col-xs-12 col-md-6">
-					<a class="btn btn-primary" href="Profesor/Profesor.php">
+				<div class="col-xs-12 col-md-12 col-menu">
+					<div class="menu-main">
+<a class="btn btn-primary" href="Profesor/Profesor.php">
 						<img src="../estilos/img/profesores.jpg" class="img-rounded" alt="" width="40" height="40"> Docentes
 					</a>
-					<a class="btn btn-primary" href="Alumno/Alumno.php">
+					</div>
+					<div class="menu-main">
+<a class="btn btn-primary" href="Alumno/Alumno.php">
 						<img src="../estilos/img/estudiantes.png" class="img-rounded" alt="" width="40" height="40"> Estudiantes
 					</a>
+					</div>
+					
+					
 				</div>
 			</div>
 			</div>
