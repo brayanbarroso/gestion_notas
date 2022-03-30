@@ -19,7 +19,7 @@
 
 	$cod = $_REQUEST['cod'];
 
-	$consult = "SELECT * FROM Curso WHERE Codigo = '$cod'";
+	$consult = "SELECT * FROM Curso WHERE Codigo = ?";
 	$sql1 = $pdo->prepare($consult);
 	$sql1->execute(array($cod));
 	$fila = $sql1->fetch();

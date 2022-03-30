@@ -67,7 +67,7 @@
 
 	$cc = $_REQUEST['cc'];
 
-	$consult = "SELECT * FROM administrador WHERE Id = '$cc'";
+	$consult = "SELECT * FROM administrador WHERE Id = ?";
 	$sql1 = $pdo->prepare($consult);
 	$sql1->execute(array($cc));
 	$fila = $sql1->fetch();

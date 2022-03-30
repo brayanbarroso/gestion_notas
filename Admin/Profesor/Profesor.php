@@ -72,7 +72,7 @@
 								<div class="col-xs-12 col-md-6">
 									<div class="campo">
 										<label for="nombre">Segundo Nombres:</label>
-										<input type="text" class="form-control" id="snombre" name="snombre" placeholder=" Segundo Nombres">
+										<input type="text" class="form-control"  name="snombre" placeholder=" Segundo Nombres">
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-6">
@@ -175,7 +175,7 @@
 						<td><?php echo $row['Direccion']; ?></td>
 						<td><?php echo $row['Telefono']; ?></td>
 						<td><?php echo $row['Correo']; ?></td>
-						<td><?php echo $row['Usuario']; ?></td>
+						<td><?php echo $row['User_Doc']; ?></td>
 						<td>
 							<a href="form-update.php?cc=<?php echo $row['Id']; ?>" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
 						</td>

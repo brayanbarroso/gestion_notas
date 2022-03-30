@@ -174,7 +174,7 @@
 						<td><?php echo $row['Direccion']; ?></td>
 						<td><?php echo $row['Telefono']; ?></td>
 						<td><?php echo $row['Correo']; ?></td>
-						<td><?php echo $row['Usuario']; ?></td>
+						<td><?php echo $row['User_Alum']; ?></td>
 
 						<td>
 							<a href="form-update.php?cc=<?php echo $row['Id']; ?>" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>

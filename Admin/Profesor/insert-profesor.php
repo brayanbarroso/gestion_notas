@@ -4,7 +4,7 @@ include("../../Conexion/Conexion.php");
 $id = $_POST['nid'];
 $td = $_POST['tipo'];
 $nom = $_POST['pnombre'];
-$snom = $_POST['Snombre'];
+$snom = $_POST['snombre'];
 $pape = $_POST['pape'];
 $sape = $_POST['sape'];
 $dir = $_POST['dir'];
@@ -14,9 +14,9 @@ $user = $_POST['user'];
 $password = $id;
 
 if (!empty($id)) {
-   $sql = "INSERT INTO Profesor VALUES('null','$td','$id','$nom','$snom','$pape','$sape','$dir','$tel','$email','$user','$password',now())";
+   $sql = "INSERT INTO Profesor(Id, Tipo, Doc, Nombres, Snom, pApellido, sApellido, Direccion, Telefono, Correo, User_Doc,Contrasena,Fecha_Creacion) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,now())";
    $insert = $pdo->prepare($sql);
-   $insert->execute(array('?,?,?,?,?,?,?,?,?,?,?,?,?'));
+   $insert->execute(array(NULL,$td,$id,$nom,$snom,$pape,$sape,$dir,$tel,$email,$user,$password));
 
    // $insert = "INSERT INTO Clase VALUES('$asign','$id')";
    // mysql_query($insert);

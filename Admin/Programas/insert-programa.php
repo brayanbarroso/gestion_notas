@@ -11,7 +11,7 @@ $dur = $_POST['duracion'];
 // var_dump($dur);
 
 if (!empty($id)) {
-  $sql = "INSERT INTO Curso VALUES(?,?,?,?,now())";
+  $sql = "INSERT INTO Curso(id, Codigo, Curso, Duracion, Fecha_creacion) VALUES(?,?,?,?,now())";
   $insert = $pdo->prepare($sql);
   $insert->execute(array(null,$id,$nom,$dur));
   $pdo = null;

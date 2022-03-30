@@ -18,8 +18,13 @@
    $user = $_POST['user'];
    $pass = $_POST['pass'];
 
+   // var_dump($rol);
+   // var_dump($user);
+   // var_dump($pass);
+
    if ($rol == 'Administrador') {
-      $sql = "SELECT * FROM administrador WHERE administrador.`User_Admin` = '$user' AND administrador.`Contrasena` = '$pass'";
+      $sql = "SELECT * FROM administrador WHERE administrador.`User_Admin` = ? AND administrador.`Contrasena` = ?";
+      // var_dump($rows);
    } elseif ($rol == 'Docente') {
       $sql = "SELECT * FROM Profesor WHERE profesor.`Id` = '$user' AND profesor.`Id` = '$pass'";
    } elseif ($rol == 'Alumno') {
@@ -29,7 +34,7 @@
    }
 
    $result = $pdo->prepare($sql);
-   $result->execute(array($rol, $user, $pass));
+   $result->execute(array($user, $pass));
    $rows = $result->fetch();
 
    $id_user = $rows['Id'];
